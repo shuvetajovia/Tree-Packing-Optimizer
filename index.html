@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tree Packing Optimizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎄 Tree Packing Optimizer</h1>
+    <p>ML-assisted folding & packing visualization</p>
+  </header>
+
+  <section class="controls">
+    <label>
+      Number of Trees
+      <input type="number" id="treeCount" value="10" min="1" />
+    </label>
+    <button id="runBtn">Optimize Packing</button>
+  </section>
+
+  <section class="output">
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </section>
+
+  <!-- 🔽 NEW TABLE SECTION -->
+  <section class="table-section">
+    <h2>Tree Placement Details</h2>
+    <table id="treeTable">
+      <thead>
+        <tr>
+          <th>Tree #</th>
+          <th>X</th>
+          <th>Y</th>
+          <th>Rotation (°)</th>
+          <th>Width</th>
+          <th>Height</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>ML + Geometry | Flask + JS | Project</p>
+  </footer>
+
+  <script src="render.js"></script>
+</body>
+</html>
